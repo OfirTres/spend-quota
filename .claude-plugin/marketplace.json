@@ -1,0 +1,5 @@
+{
+  "name": "spend-quota",
+  "owner": { "name": "OfirTres" },
+  "plugins": [{ "name": "spend-quota", "source": "./" }]
+}

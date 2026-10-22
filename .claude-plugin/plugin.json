@@ -1,0 +1,23 @@
+{
+  "name": "spend-quota",
+  "version": "0.1.0",
+  "description": "Monthly spend vs quota above the prompt, colored against today's expected range; /spend shows the breakdown.",
+  "author": { "name": "OfirTres" },
+  "license": "MIT",
+  "repository": "https://github.com/OfirTres/spend-quota",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "monthlyQuota": {
+      "type": "number",
+      "title": "Monthly quota (USD)",
+      "description": "Fallback monthly budget in US dollars when the account reports no limit.",
+      "default": 2000
+    },
+    "daysOff": {
+      "type": "string",
+      "title": "Days off",
+      "description": "Comma-separated weekdays excluded from the pace estimate (Sun,Mon,Tue,Wed,Thu,Fri,Sat).",
+      "default": "Fri,Sat"
+    }
+  }
+}
